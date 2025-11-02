@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons>
+    <addon id="plugin.video.kyivstar.tv" name="Kyivstar TV" version="0.0.7" provider-name="tvhn">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0" />
+            <import addon="script.module.requests" />
+            <import addon="script.module.routing" />
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="main.py">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.service" library="service.py" />
+        <extension point="xbmc.addon.metadata">
+            <description>Kyivstar TV</description>
+            <disclaimer />
+            <summary>Kyivstar TV</summary>
+            <language>en</language>
+            <platform>all</platform>
+            <license>The MIT License</license>
+            <website />
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+
+    <addon id="repository.tvhn" name="tvhn repository" provider-name="tvhn" version="1.0.0">
+        <extension point="xbmc.addon.metadata">
+            <summary>tvhn repository</summary>
+            <description>Addon repository by tvhn</description>
+            <platform>all</platform>
+        </extension>
+        <extension name="tvhn repository" point="xbmc.addon.repository">
+            <dir>
+                <info>https://raw.githubusercontent.com/TVHomeNetwork/kodi.repository/master/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/TVHomeNetwork/kodi.repository/master/addons.xml.sha256</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/TVHomeNetwork/kodi.repository/master</datadir>
+                <hashes>false</hashes>
+            </dir>
+        </extension>
+    </addon>
+</addons>

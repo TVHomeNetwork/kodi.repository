@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.tvhn" name="tvhn repository" provider-name="tvhn" version="1.0.0">
+    <extension point="xbmc.addon.metadata">
+        <summary>tvhn repository</summary>
+        <description>Addon repository by tvhn</description>
+        <platform>all</platform>
+    </extension>
+    <extension name="tvhn repository" point="xbmc.addon.repository">
+        <dir>
+            <info>https://raw.githubusercontent.com/TVHomeNetwork/kodi.repository/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/TVHomeNetwork/kodi.repository/master/addons.xml.sha256</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/TVHomeNetwork/kodi.repository/master</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+</addon>
